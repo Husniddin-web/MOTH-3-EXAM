@@ -44,35 +44,6 @@ check.addEventListener('click', (e) => {
     }
 })
 
-// let checkboxes=document.querySelectorAll('.checkbox')
-// console.log(checkboxes);
-// for(var checkbox of checkboxes){
-//         // let li = document.createElement("li")
-//     checkbox.addEventListener('click',(e)=>{
-//         let inputValue=e.target
-//         // console.log(e);
-        
-        
-//         if(inputValue.checked == true){
-//             arr.push(inputValue.value);
-//             // console.log(arr);
-//             upper.textContent=arr.join()
-//             // upper.appendChild(li)
-//         }else{
-//             // console.log('you uncgecekd box');
-//             arr=arr.filter(e=> e !== inputValue.value);
-//             upper.textContent=arr.splice(0,1).join()
-//             // upper.appendChild(li)
-//         }
-//     })
-// }
-
-
-
-
-
-
-
 // adder //////
 adder.addEventListener('click', (e) => {
     let plus = e.target
@@ -93,8 +64,7 @@ function modal() {
     let title = document.querySelector('.modal-title')
     btn.addEventListener('click', () => {
         console.log(title.textContent);
-        if (bread.textContent != 0 && box.textContent != 0 && width.textContent != 0) {
-            console.log('salom');
+        if (    bread.textContent != 0 && box.textContent != 0 && width.textContent != 0 && upper !== 0) {
             modalWrapper.setAttribute('class', 'modl d-flex')
             title.textContent = 'Success'
         } else {
@@ -110,23 +80,10 @@ function modal() {
 
 
 modal()
-
-
-
-
-// ('#modal-btn').addEventListener('click',()=>{
-//     if(kod.value.trim().length>0&&name.value.trim().length>0&&email.value.trim().length>0){
-//         $('#modal').setAttribute('class','modal-wrapper d-flex');
-//         setTimeout(function(){
-//         $('#modal').setAttribute('class','modal-wrapper slide');
-//         },3000)
-//     }
-// })
-wrapper.addEventListener('click',(e)=>{
+wrapper.addEventListener('click', (e) => {
     let addClick = e.target;
-    if(addClick.textContent == '25 sm'){
+    if (addClick.textContent == '25 sm') {
         wrapperItem.className = 'wrapper-item wrapper_dark'
         console.log(wrapperItem);
     }
-    // console.log(e.target);
 })
