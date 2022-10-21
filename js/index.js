@@ -11,18 +11,19 @@ let wrapperItem = document.querySelector('.wrapper-item');
 let check = document.querySelector('.checkbox');
 let upper = document.querySelector("#upper")
 let adder = document.querySelector('.qoshimcha')
-
+let item = document.querySelector('#item')
 ////// choose type ////
 select.addEventListener('change', (e) => {
     bread.textContent = `=>  Nonning turi ${e.target.value}`
 })
+console.log(wrapperItem);
+
 
 //////Size//////
 wrapper.addEventListener('click', (e) => {
     let box = e.target.className
     if (box == 'wrapper-item bg-white') {
         width.innerHTML = ` => ${e.target.textContent}`
-        box.setAttribute('class ', 'wrapper-item bg-success')
     }
 })
 
@@ -42,6 +43,35 @@ check.addEventListener('click', (e) => {
         }
     }
 })
+
+// let checkboxes=document.querySelectorAll('.checkbox')
+// console.log(checkboxes);
+// for(var checkbox of checkboxes){
+//         // let li = document.createElement("li")
+//     checkbox.addEventListener('click',(e)=>{
+//         let inputValue=e.target
+//         // console.log(e);
+        
+        
+//         if(inputValue.checked == true){
+//             arr.push(inputValue.value);
+//             // console.log(arr);
+//             upper.textContent=arr.join()
+//             // upper.appendChild(li)
+//         }else{
+//             // console.log('you uncgecekd box');
+//             arr=arr.filter(e=> e !== inputValue.value);
+//             upper.textContent=arr.splice(0,1).join()
+//             // upper.appendChild(li)
+//         }
+//     })
+// }
+
+
+
+
+
+
 
 // adder //////
 adder.addEventListener('click', (e) => {
@@ -63,7 +93,7 @@ function modal() {
     let title = document.querySelector('.modal-title')
     btn.addEventListener('click', () => {
         console.log(title.textContent);
-        if (bread.textContent != 0  && box.textContent != 0 && width.textContent != 0) {
+        if (bread.textContent != 0 && box.textContent != 0 && width.textContent != 0) {
             console.log('salom');
             modalWrapper.setAttribute('class', 'modl d-flex')
             title.textContent = 'Success'
@@ -92,3 +122,11 @@ modal()
 //         },3000)
 //     }
 // })
+wrapper.addEventListener('click',(e)=>{
+    let addClick = e.target;
+    if(addClick.textContent == '25 sm'){
+        wrapperItem.className = 'wrapper-item wrapper_dark'
+        console.log(wrapperItem);
+    }
+    // console.log(e.target);
+})
