@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- main css  -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./img/pizta.svg" type="image/x-icon">
+    <title>Bellesimo Pitzaa</title>
+</head>
+
+<body>
+    <header>
+        <nav class="shadow">
+            <div class="modl d-none">
+                <div class="mdlw">
+                    <h2 class="modal-title">Danger</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nav__site">
+                    <div class="nav__logo">
+                        <a href="./index.html">
+                            <img src="./img/logo.svg" alt="" class="nav-img">
+
+                        </a>
+                        <h1 class="nav__title">
+                            Pitza Zakaz Berish
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main start  -->
+    <main>
+        <section class="hero-site">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-left">
+                        <div class="pitza-type">
+                            <label class="non" for="type">Noni qanday bolsin?</label>
+                            <select required class="form-select w-50 my-4" id="select">
+                                <option hidden value="defualt" selected disabled >Non turlar</option>
+                                <option value="yupqa">Yupqa</option>
+                                <option value="ortacha">Ortacha</option>
+                                <option value="qalin">Qalin</option>
+                            </select>
+                        </div>
+                        <div class="pitza-width">
+                            <h2 class="pitza-width-title">Pitzzaning olchami</h2>
+                            <div class="wrapper">
+                                <div class="wrapper-item bg-white">
+                                    25 sm
+                                </div>
+                                <div class="wrapper-item bg-white">
+                                    30 sm
+                                </div>
+                                <div class="wrapper-item bg-white">
+                                    35 sm
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-box">
+                            <h2 class="check-box-title"> Ustiga nima solaylik?</h2>
+                            <div class="checkbox">
+                                <ul class="check-list-1">
+                                    <li class="check-item">
+                                        <input value="Kurki gosht" class="checkboxs" type="checkbox">
+                                        <label for="gosht">
+                                            Kurki gosht
+                                        </label>
+                                    </li>
+                                    <li class="check-item">
+                                        <input value="Zaytun" type="checkbox" class="checkboxs">
+                                        <label for="zaytun">
+                                            Zaytun
+                                        </label>
+                                    </li>
+                                    <li class="check-item">
+                                        <input value="Pomidor" type="checkbox" class="checkboxs">
+                                        <label for="pomidor">
+                                            Pomidor
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul class="check-list-2">
+                                    <li class="check-item">
+                                        <input value="Tuzlangan bodiring" type="checkbox" class="checkboxs">
+                                        <label for="gosht">
+                                            Tuzlangan bodiring
+                                        </label>
+                                    </li>
+                                    <li class="check-item">
+                                        <input value=" Qoziqorin" type="checkbox" class="checkboxs">
+                                        <label for="zaytun">
+                                            Qoziqorin
+                                        </label>
+                                    </li>
+                                    <li class="check-item">
+                                        <input value="Qazi" type="checkbox" class="checkboxs">
+                                        <label for="pomidor">
+                                            Qazi
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="qoshimcha-title">Qoshimchalar</h3>
+                        <div class="qoshimcha">
+                            <div class="qoshimcha-item">
+                                <label  for="type">Achchiq</label>
+                                <input value="Achchiq" type="checkbox">
+                            </div>
+                            <div class="qoshimcha-item">
+                                <label for="type">Sasiskali</label>
+                                <input value="Sasiskali" type="checkbox">
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <span class="line"></span>
+                    <div class="hero-right">
+                        <p class="p">Non:</p>
+                        <div class="nons">
+                        </div>
+                        <p class="p">Pitzzaning olchami:</p>
+                        <div class="width">
+                        </div>
+                        <p class="p d-flex">Ustida:</p>
+                        <ul id="upper" class="p-0 nav-list">
+
+                        </ul>
+                        <p class="p">Qoshimcha</p>
+                        <div class="qosh">
+                        </div>
+                        <button type="submit" class="btn btn-warning p-3 ">Buyurtma berish</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- main end  -->
+    <!-- footer start  -->
+    <footer class="bg-secondary">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.svg" alt="rasm" class="nav-img">
+                    </a>
+                </div>
+                <div class="links">
+                    <ul class="links-list">
+                        <li class="links-item">
+                            <a href="https://www.youtube.com/" target="_blank">Youtobe</a>
+                            <i class="bi bi-youtube"></i>
+                        </li>
+                        <li class="links-item">
+                            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            <i class="bi bi-instagram"></i>
+                        </li>
+                        <li class="links-item">
+                            <a href="https://www.telegram.com/" target="_blank">Telegram</a>
+                            <i class="bi bi-telegram"></i>
+                        </li>
+                        <li class="links-item">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+</body>
+<script src="./js/plugin.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

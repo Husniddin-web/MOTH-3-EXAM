@@ -1,0 +1,243 @@
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+}
+.nav__logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav__title{
+    color: coral;
+}
+.nav-img{
+    width: 100px;
+    height: 100px;
+    transition: all .4s ease;
+}
+.nav-img:hover{
+    transform: scale(1.2);
+}
+.hero{
+    padding-top: 50px;
+}
+.non{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;   
+    color: chocolate;
+}
+#select{
+    padding: 10px;
+    background-color: #EDEDED;
+}
+#select option{
+    padding: 10px;
+}
+.pitza-width-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #1CD6CE;
+}
+.checkbox,.wrapper{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    gap: 40px;
+}
+.wrapper-item{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: all 1s ease-in-out;
+}
+
+.wrapper-item:nth-child(1){
+    border-color: #FF1E00;
+}
+.wrapper-item:nth-child(2){
+    border-color: #1D1CE5;
+}
+.wrapper-item:nth-child(3){
+    border-color: #38E54D;
+}
+.check-box{
+    margin-top: 40px;
+}
+.check-box-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #D61C4E;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.check-list-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.check-list-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.check-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    
+}
+.check-item input{
+    width: 30px;
+    height: 30px;
+}
+.qoshimcha-title{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#38E54D ;
+    margin-bottom: 30px;
+} 
+.qoshimcha{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    
+}
+.qoshimcha-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.qoshimcha-item input{
+    width: 30px;
+    height: 30px;
+
+}
+/* hero  right  */
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    border: 1px solid black;
+}
+.hero-right{
+    margin-top: 100px;
+    /* margin-right: 40px; */
+}
+.p{
+    margin: 0;
+}
+.p{
+    font-size: 25px;
+}
+.nons,.width,.ustida,.qosh,#upper{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+}
+.links-list{
+    display: flex;
+}
+.links-item{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+.links-item a{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.links-item:nth-child(1) i{
+    color: red;
+    font-size: 30px;
+}
+.links-item:nth-child(2) i{
+    color: #F56040  ;
+    font-size: 30px;
+}
+.links-item:nth-child(3) i{
+    color:#4eb9ef;
+    font-size: 30px;
+}
+/* footer  */
+footer{
+    padding: 20px;
+    margin-top: 50px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ustida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modl{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.711);
+    z-index: 99999;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+.mdlw{
+    width: 50%;
+    height: 40%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.modal-title{
+    text-align: center;
+    font-size: 60px;
+    color: #FF1E00;
+    padding-top: 100px;
+}
+.swipe{
+    transform: translateY(-200%);
+}
+.line{
+    border-left: 2px solid black;
+}
+@media only screen and (max-width:992px){
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto; 
+    }
+}
+@media only screen and (max-width:686px){
+    .links-list{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+}
